@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'createfun1';
+  title = 'createfun';
+  showMathsButton=true;
+  showMaths=false;
+  Maths()
+  {
+    this.showMaths=true;
+    this.showMathsButton=false;
+  }
 }
