@@ -13,7 +13,7 @@
 <body>
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">CreateFun</a>
+  <a class="navbar-brand" (click)="Maths()">CreateFun</a>
   <button class="navbar-toggler" type="button"   (click)="toggleNavbar()" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -23,18 +23,18 @@
       <li class="nav-item"><a class="nav-link" routerLink="/home"><i class="bi bi-house-door "></i></a> </li>
         
      
-      <li class="nav-item"><a  class="nav-link" routerLink="/maths">Maths</a></li>
-      <li class="nav-item"><a   class="nav-link" routerLink="/food">Food</a></li>
+      <li class="nav-item"><a  class="nav-link" (click)="Maths()">Maths</a></li>
+      <li class="nav-item"><a   class="nav-link" (click)="Maths()">Food</a></li>
 
-      <li class="nav-item"><a  class="nav-link" routerLink="/bhajans">Bhajans</a></li>
-      <li class="nav-item"><a  class="nav-link" routerLink="/booksummaries">Book Summaries</a></li>
+      <li class="nav-item"><a  class="nav-link"(click)="Maths()">Bhajans</a></li>
+      <li class="nav-item"><a  class="nav-link" (click)="Maths()">Book Summaries</a></li>
 
-      <li class="nav-item"><a  class="nav-link" routerLink="/kannada">Kannada</a></li>
-      <li class="nav-item"><a  class="nav-link" routerLink="/memorytips">Memory Tips</a></li>
-      <li class="nav-item"><a  class="nav-link" routerLink="/programming">Programming</a></li>
-      <li class="nav-item"><a  class="nav-link" routerLink="/books">Books</a></li>
+      <li class="nav-item"><a  class="nav-link" (click)="Maths()">Kannada</a></li>
+      <li class="nav-item"><a  class="nav-link" (click)="Maths()">Memory Tips</a></li>
+      <li class="nav-item"><a  class="nav-link" (click)="Maths()">Programming</a></li>
+      <li class="nav-item"><a  class="nav-link" (click)="Maths()">Books</a></li>
 
-      <li class="nav-item"><a  class="nav-link" routerLink="/contactus">Contact US</a></li>
+      <li class="nav-item"><a  class="nav-link" (click)="Maths()">Contact US</a></li>
     </ul>
   </div>  
 </nav>
@@ -45,10 +45,86 @@
 
 
 <h1> Welcome to CreateFun Channel</h1>
-<div *ngIf="showMathsButton"><input type="button" value="Show-Maths" (click)="Maths()"></div>
 
 
-<div *ngIf="showMaths">
-  <iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc"></iframe> <br>
+<div *ngIf="show[0]">  <!--Maths-->
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc"></iframe> 
+  
+  <br>
+
 <iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc">
-</iframe></div>
+</iframe>
+</div>
+
+
+<div *ngIf="show[1]">  <!--Food-->
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc"></iframe> 
+  
+  <br>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc">
+</iframe>
+</div>
+
+<div *ngIf="show[2]">  <!--Bhajans-->
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc"></iframe> 
+  
+  <br>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc">
+</iframe>
+</div>
+
+<div *ngIf="show[3]">  <!--Book Summaries-->
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc"></iframe> 
+  
+  <br>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc">
+</iframe>
+</div>
+
+<div *ngIf="show[4]">  <!--Kannada-->
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc"></iframe> 
+  
+  <br>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc">
+</iframe>
+</div>
+
+<div *ngIf="show[5]">  <!--MemoryTips-->
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc"></iframe> 
+  
+  <br>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc">
+</iframe>
+</div>
+
+<div *ngIf="show[6]">  <!--Progrmming-->
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc"></iframe> 
+  
+  <br>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc">
+</iframe>
+</div>
+
+<div *ngIf="show[7]">  <!--Books-->
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc"></iframe> 
+  
+  <br>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc">
+</iframe>
+</div>
+
+<div *ngIf="show[8]">  <!--ContactUS-->
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc"></iframe> 
+  
+  <br>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tN2zgLOMznc">
+</iframe>
+</div>

@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'createfun';
   showMathsButton=true;
-  showMaths=false;
+  show:boolean []=[false,false,false,false,false,false,false,false,false,false,false];
   Maths()
   {
-    this.showMaths=true;
-    this.showMathsButton=false;
+    this.show[0]=true;
+   
   }
   navbarOpen = false;
   showIcon=false;
