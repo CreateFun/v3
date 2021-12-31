@@ -14,4 +14,10 @@ export class AppComponent {
     this.showMaths=true;
     this.showMathsButton=false;
   }
+  navbarOpen = false;
+  showIcon=false;
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+    this.showIcon=true;
+  }
 }
