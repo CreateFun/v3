@@ -174,7 +174,7 @@ export class AppComponent {
       {
         "imgsrc":this.urlSafe[0],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Jai Shri Krishna",
+        "cardtextHeader": "Jai Shri Krishna",  
         "cardtextBody":  "Learning Bhajans is Fun & Devotional. Connecting to God and surrendering to him gives immense mental peace.",
         "cardtextFooter":  "Please listen Sing and Enjoy ",
         
