@@ -7,37 +7,358 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class AppComponent {
   title = 'createfun';
+  Heading="";
+  Headers:string[]=['Maths','Food','Bhajans','Book Summaries','Kannda','Meory Tips','Programming','Books','Contact Us']
   showMathsButton=true;
   show:boolean []=[false,false,false,false,false,false,false,false,false,false,true];
   createfun()
   {}
+
   Maths()
   {
-    this.show[0]=true;
+    this.Heading=this.Headers[0];
     for(let i=0;i<=10;i++)
     {
-      if(i!==0)
+      if(i==0 || i==9)
+      {
+        this.show[0]=true;
+        this.show[9]=true;
+      }
+      else
         this.show[i]=false;
     }
     this.navbarOpen =false;
+
+    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this. groups=[
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+        
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-primary"
+      }
+    ]
   }
+
+
   Food()
   {
-    this.show[1]=true;
+    this.Heading=this.Headers[1];
     for(let i=0;i<=10;i++)
     {
-      if(i!==1)
+      if(i==1 || i==9)
+      {
+        this.show[1]=true;
+        this.show[9]=true;
+      }
+      else
         this.show[i]=false;
     }
     this.navbarOpen =false;
+
+    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this. groups=[
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+        
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+      
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+        
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-primary"
+      }
+    ]
   }
 
   Bhajans()
   {
-   
+    this.Heading=this.Headers[2];
+    console.log(this.Heading);
     for(let i=0;i<=10;i++)
     {
       if(i==2 || i==9)
+      {
+        this.show[2]=true;
+        this.show[9]=true;
+      }
+      else
+        this.show[i]=false;
+    }
+    this.navbarOpen =false;
+
+    this.url=["https://www.youtube.com/embed/xitTUOMbcII","https://www.youtube.com/embed/T2k3poiEM2w","https://www.youtube.com/embed/tN2zgLOMznc",
+  "https://www.youtube.com/embed/m2a2H28UQAU","https://www.youtube.com/embed/KGYm6JJu2Zw"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[1]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[2]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[3]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[4])];
+    this. groups=[
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Shri Krishna",
+        "cardtextBody":  "Learning Bhajans is Fun & Devotional. Connecting to God and surrendering to him gives immense mental peace.",
+        "cardtextFooter":  "Please listen Sing and Enjoy ",
+        
+       
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[1],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Shri Krishna ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+     
+        "color":"table-warning"
+      },
+      {
+        "imgsrc":this.urlSafe[2],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Shri Krishna ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-success"
+      },
+      {
+        "imgsrc":this.urlSafe[3],
+        "name": "Ganesh Bhajan ",
+        "cardtextHeader": "Jai Ganesha ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+   
+        "color":"table-info"
+      },
+      {
+        "imgsrc":this.urlSafe[4],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Panduranga",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-danger"
+      }
+    ]
+  }
+
+  BookSummaries()
+  {  
+    this.Heading=this.Headers[3];
+    for(let i=0;i<=10;i++)
+    {
+      if(i==3 || i==9)
+      {
+        this.show[3]=true;
+        this.show[9]=true;
+      }
+      else
+        this.show[i]=false;
+    }
+    this.navbarOpen =false;
+
+    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this. groups=[
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+     
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+      
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+      
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+      
+        "color":"table-primary"
+      }
+    ]
+  }
+
+  Kannada()
+  {
+    this.Heading=this.Headers[4];
+    for(let i=0;i<=10;i++)
+    {
+      if(i==4 || i==9)
+      {
+        this.show[4]=true;
+        this.show[9]=true;
+      }
+      else
+        this.show[i]=false;
+    }
+    this.navbarOpen =false;
+
+    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this. groups=[
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+     
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+    
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+     
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+     
+        "color":"table-primary"
+      }
+    ]
+
+  }
+  
+  MemoryTips()
+  {
+    this.Heading=this.Headers[5];
+    for(let i=0;i<=10;i++)
+    {
+      if(i==5 || i==9)
       {
         this.show[2]=true;
         this.show[9]=true;
@@ -56,8 +377,7 @@ export class AppComponent {
         "cardtextHeader": "Learning Maths is Fun  ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-        "buttonName":"Maths",
-        "link":"/maths",
+      
         "color":"table-primary"
       },
       {
@@ -66,8 +386,7 @@ export class AppComponent {
         "cardtextHeader": "Learning Maths is Fun  ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-        "buttonName":"Maths",
-        "link":"/maths",
+      
         "color":"table-primary"
       },
       {
@@ -76,8 +395,7 @@ export class AppComponent {
         "cardtextHeader": "Learning Maths is Fun  ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-        "buttonName":"Maths",
-        "link":"/maths",
+      
         "color":"table-primary"
       },
       {
@@ -86,8 +404,7 @@ export class AppComponent {
         "cardtextHeader": "Learning Maths is Fun  ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-        "buttonName":"Maths",
-        "link":"/maths",
+    
         "color":"table-primary"
       },
       {
@@ -96,84 +413,145 @@ export class AppComponent {
         "cardtextHeader": "Learning Maths is Fun  ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-        "buttonName":"Maths",
-        "link":"/maths",
+       
         "color":"table-primary"
       }
     ]
   }
-
-  BookSummaries()
+    
+  Programming()
   {
-    this.show[3]=true;
+    this.Heading=this.Headers[6];
     for(let i=0;i<=10;i++)
     {
-      if(i!==3)
+      if(i==6 || i==9)
+      {
+        this.show[6]=true;
+        this.show[9]=true;
+      }
+      else
         this.show[i]=false;
     }
     this.navbarOpen =false;
-  }
 
-  Kannada()
-  {
-    this.show[9]=true;
-    for(let i=0;i<=10;i++)
-    {
-      if(i!==9)
-        this.show[i]=false;
-    }
-    this.navbarOpen =false;
     this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
     this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
     this. groups=[
       {
         "imgsrc":this.urlSafe[0],
-        "name": "Maths",
+        "name": "Krishna Bhajan ",
         "cardtextHeader": "Learning Maths is Fun  ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-        "buttonName":"Maths",
-        "link":"/maths",
+     
         "color":"table-primary"
-      }]
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+      
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
 
-
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+        
+        "color":"table-primary"
+      }
+    ]
   }
-  
-  MemoryTips()
-  {
-    this.show[5]=true;
-    for(let i=0;i<=10;i++)
-    {
-      if(i!==5)
-        this.show[i]=false;
-    }
-    this.navbarOpen =false;
-  }
-  
-  Programming()
-  {
-    this.show[6]=true;
-    for(let i=0;i<=10;i++)
-    {
-      if(i!==6)
-        this.show[i]=false;
-    }
-    this.navbarOpen =false;
-  }
-  
   Books()
   {
-    this.show[7]=true;
+    this.Heading=this.Headers[7];
     for(let i=0;i<=10;i++)
     {
-      if(i!==7)
+      if(i==7 || i==9)
+      {
+        this.show[7]=true;
+        this.show[9]=true;
+      }
+      else
         this.show[i]=false;
     }
     this.navbarOpen =false;
+
+    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this. groups=[
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+        
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+   
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+     
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+        
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+        
+        "color":"table-primary"
+      }
+    ]
   }
   ContactUS()
   {
+    this.Heading=this.Headers[8];
     this.show[8]=true;
     for(let i=0;i<=10;i++)
     {
@@ -199,8 +577,7 @@ export class AppComponent {
       "cardtextHeader": "Learning Maths is Fun  ",
       "cardtextBody":  "Learning Maths is Fun",
       "cardtextFooter":  "Learning Maths is Fun",
-      "buttonName":"Maths",
-      "link":"/maths",
+    
       "color":"table-primary"
     },
     {
@@ -209,9 +586,7 @@ export class AppComponent {
       "cardtextHeader": "Learning Maths is Fun  ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-      "buttonName":"Bhajans",
-      "link":"/bhajans",
-      "color":"table-success"
+        "color":"table-primary"
     }];
     constructor(public sanitizer: DomSanitizer) {
 
