@@ -12,7 +12,18 @@ export class AppComponent {
   showMathsButton=true;
   show:boolean []=[false,false,false,false,false,false,false,false,false,false,true];
   createfun()
-  {}
+  {
+    for(let i=0;i<=10;i++)
+    {
+      if(i==10)
+      {
+        this.show[10]=true;
+        
+      }
+      else
+        this.show[i]=false;
+    }
+  }
 
   Maths()
   {
@@ -29,53 +40,59 @@ export class AppComponent {
     }
     this.navbarOpen =false;
 
-    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
-    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this.url=["https://www.youtube.com/embed/xitTUOMbcII","https://www.youtube.com/embed/T2k3poiEM2w","https://www.youtube.com/embed/tN2zgLOMznc",
+  "https://www.youtube.com/embed/m2a2H28UQAU","https://www.youtube.com/embed/KGYm6JJu2Zw"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[1]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[2]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[3]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[4])];
     this. groups=[
       {
         "imgsrc":this.urlSafe[0],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
+        "cardtextHeader": "Jai Shri Krishna",  
+        "cardtextBody":  "Learning Bhajans is Fun & Devotional. Connecting to God and surrendering to him gives immense mental peace.",
+        "cardtextFooter":  "Please listen Sing and Enjoy ",
         
-        "color":"table-primary"
-      },
-      {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
        
         "color":"table-primary"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[1],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-       
-        "color":"table-primary"
+     
+        "color":"table-warning"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[2],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
        
-        "color":"table-primary"
+        "color":"table-success"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[3],
+        "name": "Ganesh Bhajan ",
+        "cardtextHeader": "Jai Ganesha ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+   
+        "color":"table-info"
+      },
+      {
+        "imgsrc":this.urlSafe[4],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Panduranga",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
        
-        "color":"table-primary"
+        "color":"table-danger"
       }
     ]
   }
@@ -96,53 +113,59 @@ export class AppComponent {
     }
     this.navbarOpen =false;
 
-    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
-    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this.url=["https://www.youtube.com/embed/xitTUOMbcII","https://www.youtube.com/embed/T2k3poiEM2w","https://www.youtube.com/embed/tN2zgLOMznc",
+  "https://www.youtube.com/embed/m2a2H28UQAU","https://www.youtube.com/embed/KGYm6JJu2Zw"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[1]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[2]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[3]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[4])];
     this. groups=[
       {
         "imgsrc":this.urlSafe[0],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
+        "cardtextHeader": "Jai Shri Krishna",  
+        "cardtextBody":  "Learning Bhajans is Fun & Devotional. Connecting to God and surrendering to him gives immense mental peace.",
+        "cardtextFooter":  "Please listen Sing and Enjoy ",
         
-        "color":"table-primary"
-      },
-      {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
-      
-        "color":"table-primary"
-      },
-      {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
        
         "color":"table-primary"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[1],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-        
-        "color":"table-primary"
+     
+        "color":"table-warning"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[2],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
        
-        "color":"table-primary"
+        "color":"table-success"
+      },
+      {
+        "imgsrc":this.urlSafe[3],
+        "name": "Ganesh Bhajan ",
+        "cardtextHeader": "Jai Ganesha ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+   
+        "color":"table-info"
+      },
+      {
+        "imgsrc":this.urlSafe[4],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Panduranga",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-danger"
       }
     ]
   }
@@ -235,53 +258,59 @@ export class AppComponent {
     }
     this.navbarOpen =false;
 
-    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
-    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this.url=["https://www.youtube.com/embed/xitTUOMbcII","https://www.youtube.com/embed/T2k3poiEM2w","https://www.youtube.com/embed/tN2zgLOMznc",
+  "https://www.youtube.com/embed/m2a2H28UQAU","https://www.youtube.com/embed/KGYm6JJu2Zw"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[1]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[2]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[3]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[4])];
     this. groups=[
       {
         "imgsrc":this.urlSafe[0],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
+        "cardtextHeader": "Jai Shri Krishna",  
+        "cardtextBody":  "Learning Bhajans is Fun & Devotional. Connecting to God and surrendering to him gives immense mental peace.",
+        "cardtextFooter":  "Please listen Sing and Enjoy ",
+        
        
         "color":"table-primary"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[1],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
      
-        "color":"table-primary"
+        "color":"table-warning"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[2],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-      
-        "color":"table-primary"
+       
+        "color":"table-success"
       },
       {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "imgsrc":this.urlSafe[3],
+        "name": "Ganesh Bhajan ",
+        "cardtextHeader": "Jai Ganesha ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-      
-        "color":"table-primary"
+   
+        "color":"table-info"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[4],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Panduranga",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-      
-        "color":"table-primary"
+       
+        "color":"table-danger"
       }
     ]
   }
@@ -301,56 +330,61 @@ export class AppComponent {
     }
     this.navbarOpen =false;
 
-    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
-    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this.url=["https://www.youtube.com/embed/xitTUOMbcII","https://www.youtube.com/embed/T2k3poiEM2w","https://www.youtube.com/embed/tN2zgLOMznc",
+  "https://www.youtube.com/embed/m2a2H28UQAU","https://www.youtube.com/embed/KGYm6JJu2Zw"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[1]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[2]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[3]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[4])];
     this. groups=[
       {
         "imgsrc":this.urlSafe[0],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
-     
-        "color":"table-primary"
-      },
-      {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
+        "cardtextHeader": "Jai Shri Krishna",  
+        "cardtextBody":  "Learning Bhajans is Fun & Devotional. Connecting to God and surrendering to him gives immense mental peace.",
+        "cardtextFooter":  "Please listen Sing and Enjoy ",
+        
        
         "color":"table-primary"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[1],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
-    
-        "color":"table-primary"
-      },
-      {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
      
-        "color":"table-primary"
+        "color":"table-warning"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[2],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-     
-        "color":"table-primary"
+       
+        "color":"table-success"
+      },
+      {
+        "imgsrc":this.urlSafe[3],
+        "name": "Ganesh Bhajan ",
+        "cardtextHeader": "Jai Ganesha ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+   
+        "color":"table-info"
+      },
+      {
+        "imgsrc":this.urlSafe[4],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Panduranga",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-danger"
       }
     ]
-
   }
   
   MemoryTips()
@@ -368,53 +402,59 @@ export class AppComponent {
     }
     this.navbarOpen =false;
 
-    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
-    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this.url=["https://www.youtube.com/embed/xitTUOMbcII","https://www.youtube.com/embed/T2k3poiEM2w","https://www.youtube.com/embed/tN2zgLOMznc",
+  "https://www.youtube.com/embed/m2a2H28UQAU","https://www.youtube.com/embed/KGYm6JJu2Zw"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[1]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[2]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[3]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[4])];
     this. groups=[
       {
         "imgsrc":this.urlSafe[0],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
-      
+        "cardtextHeader": "Jai Shri Krishna",  
+        "cardtextBody":  "Learning Bhajans is Fun & Devotional. Connecting to God and surrendering to him gives immense mental peace.",
+        "cardtextFooter":  "Please listen Sing and Enjoy ",
+        
+       
         "color":"table-primary"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[1],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-      
-        "color":"table-primary"
+     
+        "color":"table-warning"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[2],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
-      
-        "color":"table-primary"
-      },
-      {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
-    
-        "color":"table-primary"
-      },
-      {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
        
-        "color":"table-primary"
+        "color":"table-success"
+      },
+      {
+        "imgsrc":this.urlSafe[3],
+        "name": "Ganesh Bhajan ",
+        "cardtextHeader": "Jai Ganesha ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+   
+        "color":"table-info"
+      },
+      {
+        "imgsrc":this.urlSafe[4],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Panduranga",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-danger"
       }
     ]
   }
@@ -434,53 +474,59 @@ export class AppComponent {
     }
     this.navbarOpen =false;
 
-    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
-    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this.url=["https://www.youtube.com/embed/xitTUOMbcII","https://www.youtube.com/embed/T2k3poiEM2w","https://www.youtube.com/embed/tN2zgLOMznc",
+  "https://www.youtube.com/embed/m2a2H28UQAU","https://www.youtube.com/embed/KGYm6JJu2Zw"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[1]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[2]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[3]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[4])];
     this. groups=[
       {
         "imgsrc":this.urlSafe[0],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
-     
-        "color":"table-primary"
-      },
-      {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
-      
-        "color":"table-primary"
-      },
-      {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
+        "cardtextHeader": "Jai Shri Krishna",  
+        "cardtextBody":  "Learning Bhajans is Fun & Devotional. Connecting to God and surrendering to him gives immense mental peace.",
+        "cardtextFooter":  "Please listen Sing and Enjoy ",
+        
        
         "color":"table-primary"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[1],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-
-        "color":"table-primary"
+     
+        "color":"table-warning"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[2],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-        
-        "color":"table-primary"
+       
+        "color":"table-success"
+      },
+      {
+        "imgsrc":this.urlSafe[3],
+        "name": "Ganesh Bhajan ",
+        "cardtextHeader": "Jai Ganesha ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+   
+        "color":"table-info"
+      },
+      {
+        "imgsrc":this.urlSafe[4],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Panduranga",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-danger"
       }
     ]
   }
@@ -499,53 +545,59 @@ export class AppComponent {
     }
     this.navbarOpen =false;
 
-    this.url=["https://www.youtube.com/embed/SEfr-fDloHk"];
-    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0])];
+    this.url=["https://www.youtube.com/embed/xitTUOMbcII","https://www.youtube.com/embed/T2k3poiEM2w","https://www.youtube.com/embed/tN2zgLOMznc",
+  "https://www.youtube.com/embed/m2a2H28UQAU","https://www.youtube.com/embed/KGYm6JJu2Zw"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[1]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[2]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[3]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[4])];
     this. groups=[
       {
         "imgsrc":this.urlSafe[0],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
+        "cardtextHeader": "Jai Shri Krishna",  
+        "cardtextBody":  "Learning Bhajans is Fun & Devotional. Connecting to God and surrendering to him gives immense mental peace.",
+        "cardtextFooter":  "Please listen Sing and Enjoy ",
         
+       
         "color":"table-primary"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[1],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
-        "cardtextBody":  "Learning Maths is Fun",
-        "cardtextFooter":  "Learning Maths is Fun",
-   
-        "color":"table-primary"
-      },
-      {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
      
-        "color":"table-primary"
+        "color":"table-warning"
       },
       {
-        "imgsrc":this.urlSafe[0],
+        "imgsrc":this.urlSafe[2],
         "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "cardtextHeader": "Jai Shri Krishna ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-        
-        "color":"table-primary"
+       
+        "color":"table-success"
       },
       {
-        "imgsrc":this.urlSafe[0],
-        "name": "Krishna Bhajan ",
-        "cardtextHeader": "Learning Maths is Fun  ",
+        "imgsrc":this.urlSafe[3],
+        "name": "Ganesh Bhajan ",
+        "cardtextHeader": "Jai Ganesha ",
         "cardtextBody":  "Learning Maths is Fun",
         "cardtextFooter":  "Learning Maths is Fun",
-        
-        "color":"table-primary"
+   
+        "color":"table-info"
+      },
+      {
+        "imgsrc":this.urlSafe[4],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Panduranga",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-danger"
       }
     ]
   }
@@ -559,6 +611,62 @@ export class AppComponent {
         this.show[i]=false;
     }
     this.navbarOpen =false;
+    
+    this.url=["https://www.youtube.com/embed/xitTUOMbcII","https://www.youtube.com/embed/T2k3poiEM2w","https://www.youtube.com/embed/tN2zgLOMznc",
+  "https://www.youtube.com/embed/m2a2H28UQAU","https://www.youtube.com/embed/KGYm6JJu2Zw"];
+    this.urlSafe=[this.sanitizer.bypassSecurityTrustResourceUrl(this.url[0]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[1]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[2]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[3]),
+    this.sanitizer.bypassSecurityTrustResourceUrl(this.url[4])];
+    this. groups=[
+      {
+        "imgsrc":this.urlSafe[0],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Shri Krishna",  
+        "cardtextBody":  "Learning Bhajans is Fun & Devotional. Connecting to God and surrendering to him gives immense mental peace.",
+        "cardtextFooter":  "Please listen Sing and Enjoy ",
+        
+       
+        "color":"table-primary"
+      },
+      {
+        "imgsrc":this.urlSafe[1],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Shri Krishna ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+     
+        "color":"table-warning"
+      },
+      {
+        "imgsrc":this.urlSafe[2],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Shri Krishna ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-success"
+      },
+      {
+        "imgsrc":this.urlSafe[3],
+        "name": "Ganesh Bhajan ",
+        "cardtextHeader": "Jai Ganesha ",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+   
+        "color":"table-info"
+      },
+      {
+        "imgsrc":this.urlSafe[4],
+        "name": "Krishna Bhajan ",
+        "cardtextHeader": "Jai Panduranga",
+        "cardtextBody":  "Learning Maths is Fun",
+        "cardtextFooter":  "Learning Maths is Fun",
+       
+        "color":"table-danger"
+      }
+    ]
   }
   // About Table starts 
   url: string[] =["https://www.youtube.com/embed/SEfr-fDloHk","https://www.youtube.com/embed/SEfr-fDloHk","https://www.youtube.com/embed/SEfr-fDloHk","https://www.youtube.com/embed/SEfr-fDloHk","https://www.youtube.com/embed/SEfr-fDloHk"];

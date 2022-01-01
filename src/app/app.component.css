@@ -2,11 +2,23 @@
     color: white;
 }
 
-.navbar-nav .nav-item.active .nav-link,
+.navbar-brand, .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
     color: greenyellow;
 }
 .navbar-nav
 {
   font-size: 20px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 150px;
+  left: 30px;
 }
