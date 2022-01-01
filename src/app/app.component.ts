@@ -17,7 +17,7 @@ export class AppComponent {
       if(i!==0)
         this.show[i]=false;
     }
-   
+    this.navbarOpen =false;
   }
   Food()
   {
@@ -27,7 +27,7 @@ export class AppComponent {
       if(i!==1)
         this.show[i]=false;
     }
-   
+    this.navbarOpen =false;
   }
 
   Bhajans()
@@ -38,7 +38,7 @@ export class AppComponent {
       if(i!==2)
         this.show[i]=false;
     }
-   
+    this.navbarOpen =false;
   }
 
   BookSummaries()
@@ -49,7 +49,7 @@ export class AppComponent {
       if(i!==3)
         this.show[i]=false;
     }
-   
+    this.navbarOpen =false;
   }
 
   Kannada()
@@ -60,7 +60,7 @@ export class AppComponent {
       if(i!==4)
         this.show[i]=false;
     }
-   
+    this.navbarOpen =false;
   }
   
   MemoryTips()
@@ -71,7 +71,7 @@ export class AppComponent {
       if(i!==5)
         this.show[i]=false;
     }
-   
+    this.navbarOpen =false;
   }
   
   Programming()
@@ -82,7 +82,7 @@ export class AppComponent {
       if(i!==6)
         this.show[i]=false;
     }
-   
+    this.navbarOpen =false;
   }
   
   Books()
@@ -93,7 +93,7 @@ export class AppComponent {
       if(i!==7)
         this.show[i]=false;
     }
-   
+    this.navbarOpen =false;
   }
   ContactUS()
   {
@@ -103,7 +103,7 @@ export class AppComponent {
       if(i!==8)
         this.show[i]=false;
     }
-
+    this.navbarOpen =false;
   }
 
 
