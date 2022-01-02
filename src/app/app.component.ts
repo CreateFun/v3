@@ -10,14 +10,15 @@ export class AppComponent {
   Heading="";
   Headers:string[]=['Maths','Food','Bhajans','Book Summaries','Kannda','Meory Tips','Programming','Books','Contact Us']
   showMathsButton=true;
-  show:boolean []=[false,false,false,false,false,false,false,false,false,false,true];
+  show:boolean []=[false,false,false,false,false,false,false,false,false,false,true,true];
   createfun()
   {
-    for(let i=0;i<=10;i++)
+    console.log(this.show.length);
+    for(let i=0;i<this.show.length;i++)
     {
-      if(i==10)
+      if(i==10 || i==11)
       {
-        this.show[10]=true;
+        this.show[i]=true;
         
       }
       else
@@ -28,7 +29,7 @@ export class AppComponent {
   Maths()
   {
     this.Heading=this.Headers[0];
-    for(let i=0;i<=10;i++)
+    for(let i=0;i<this.show.length;i++)
     {
       if(i==0 || i==9)
       {
@@ -101,7 +102,7 @@ export class AppComponent {
   Food()
   {
     this.Heading=this.Headers[1];
-    for(let i=0;i<=10;i++)
+    for(let i=0;i<this.show.length;i++)
     {
       if(i==1 || i==9)
       {
@@ -174,7 +175,7 @@ export class AppComponent {
   {
     this.Heading=this.Headers[2];
     console.log(this.Heading);
-    for(let i=0;i<=10;i++)
+    for(let i=0;i<this.show.length;i++)
     {
       if(i==2 || i==9)
       {
@@ -246,7 +247,7 @@ export class AppComponent {
   BookSummaries()
   {  
     this.Heading=this.Headers[3];
-    for(let i=0;i<=10;i++)
+    for(let i=0;i<this.show.length;i++)
     {
       if(i==3 || i==9)
       {
@@ -318,7 +319,7 @@ export class AppComponent {
   Kannada()
   {
     this.Heading=this.Headers[4];
-    for(let i=0;i<=10;i++)
+    for(let i=0;i<this.show.length;i++)
     {
       if(i==4 || i==9)
       {
@@ -390,7 +391,7 @@ export class AppComponent {
   MemoryTips()
   {
     this.Heading=this.Headers[5];
-    for(let i=0;i<=10;i++)
+    for(let i=0;i<this.show.length;i++)
     {
       if(i==5 || i==9)
       {
@@ -462,7 +463,7 @@ export class AppComponent {
   Programming()
   {
     this.Heading=this.Headers[6];
-    for(let i=0;i<=10;i++)
+    for(let i=0;i<this.show.length;i++)
     {
       if(i==6 || i==9)
       {
@@ -533,7 +534,7 @@ export class AppComponent {
   Books()
   {
     this.Heading=this.Headers[7];
-    for(let i=0;i<=10;i++)
+    for(let i=0;i<this.show.length;i++)
     {
       if(i==7 || i==9)
       {
@@ -605,7 +606,7 @@ export class AppComponent {
   {
     this.Heading=this.Headers[8];
     this.show[8]=true;
-    for(let i=0;i<=10;i++)
+    for(let i=0;i<this.show.length;i++)
     {
       if(i!==8)
         this.show[i]=false;
@@ -702,7 +703,7 @@ export class AppComponent {
     }
   Demo(){
     this.show[9]=true;
-    for(let i=0;i<=10;i++)
+    for(let i=0;i<this.show.length;i++)
     {
       if(i!==9)
         this.show[i]=false;
@@ -715,5 +716,7 @@ export class AppComponent {
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
     this.showIcon=true;
+    this.show[11]=false;
+    this.show[10]=false;
   }
 }
